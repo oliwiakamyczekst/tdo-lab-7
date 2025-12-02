@@ -4,6 +4,8 @@ on: workflow_dispatch
 jobs:
   run-it:
     runs-on: ubuntu-latest
+    env:
+      MESSAGE: "Hello from ENV!"   # <-- zmienna środowiskowa
 
     steps:
       - uses: actions/checkout@v4
